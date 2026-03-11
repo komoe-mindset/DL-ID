@@ -1,0 +1,97 @@
+
+export const APP_TITLE = 'ဓမ္မလမ်း Zoom Class';
+export const APP_SUBTITLE = 'Student Registration & ID Finder';
+
+export const VIBER_LINK = 'https://invite.viber.com/?g2=AQBeU4sjax6Pw1XUCULSH7wbKTxdR37RbbREVPlwetspJawe7AfrNfP%2FMNcT8aEc';
+export const TELEGRAM_LINK = 'https://t.me/DLzoomclass';
+export const REGISTRATION_LINK = 'https://forms.office.com/r/BAg96EUm5u';
+export const FACEBOOK_LINK = 'https://www.facebook.com/drsoelwin1';
+export const YOUTUBE_LINK = 'https://www.youtube.com/@Drsoelwinmandalayofficial';
+export const PATRON_WEBSITE_LINK = 'https://drsoelwin.mindset-it.online/';
+
+export const translations = {
+  my: {
+    findId: 'ID ရှာရန်',
+    insights: 'အချက်အလက်များ',
+    searchPlaceholder: 'အမည် သို့မဟုတ် မြို့ဖြင့် ရှာဖွေပါ...',
+    idSearch: 'ID ရှာဖွေမည်',
+    recordsFound: 'ခု တွေ့ရှိသည်',
+    supabaseLinked: 'ဒေတာဘေ့စ် ချိတ်ဆက်ထားသည်',
+    noResults: 'ရှာမတွေ့ပါ',
+    adjustSearch: 'ရှာဖွေမှု အသုံးအနှုန်းကို ပြန်လည် စစ်ဆေးပါ။',
+    totalParticipants: 'စုစုပေါင်း ဦးရေ',
+    distByCity: 'မြို့အလိုက် ခွဲခြားမှု',
+    filterCity: 'မြို့အမည် ရှာရန်...',
+    clearFilter: 'Filter ဖြုတ်မည် ×',
+    membersIn: 'ရှိ အဖွဲ့ဝင်များ',
+    latestMembers: 'နောက်ဆုံး အဖွဲ့ဝင်များ',
+    liveFeed: 'တိုက်ရိုက်ပြသနေသည်',
+    noMembers: 'ဤနေရာတွင် အဖွဲ့ဝင် မရှိသေးပါ',
+    leaderPatron: 'ဦးဆောင်နာယက',
+    patronName: 'ဝိသုဒ္ဓိမဂ်ဓမ္မလမ်းဝိပဿနာအဖွဲ့များ၏ ဦးဆောင်နာယက၊\nမဟာသဒ္ဓမ္မဇောတိကဓဇ\nဆရာကြီးဒေါက်တာစိုးလွင်(မန္တလေး)',
+    visitWebsite: 'ကိုယ်ရေးအကျဉ်း ဝဘ်ဆိုက်သို့ သွားရန်',
+    stayUpdated: 'သတင်းအချက်အလက် ရယူရန်',
+    viberGroup: 'Viber အဖွဲ့',
+    telegramChannel: 'Telegram ချန်နယ်',
+    facebookPage: 'Facebook စာမျက်နှာ',
+    youtubeChannel: 'YouTube ချန်နယ်',
+    joinAnnouncements: 'သတင်းများ သိရှိရန် ချိတ်ဆက်ပါ',
+    instantUpdates: 'နောက်ဆုံးရ သတင်းများ ရယူပါ',
+    followUpdates: 'နောက်ဆုံးရ အချက်အလက်များ',
+    watchVideos: 'တရားတော်များ နာယူရန်',
+    studentId: 'ကျောင်းသား ID',
+    fullName: 'အမည်',
+    city: 'နေရပ်',
+    details: 'အသေးစိတ် အချက်အလက်များ',
+    copyShare: 'အချက်အလက်များကို ကူးယူ၍ မျှဝေရန်',
+    copied: 'ကူးယူပြီးပါပြီ!',
+    syncing: 'ဒေတာများကို ရယူနေသည်...',
+    communityFooter: 'ဓမ္မလမ်း မိသားစု • ဒေတာ ခွဲခြမ်းစိတ်ဖြာရေး စနစ်',
+    viewMembers: 'အဖွဲ့ဝင်များ ကြည့်ရန်',
+    close: 'ပိတ်မည်',
+    latestMembersTitle: 'နောက်ဆုံး အဖွဲ့ဝင်များ',
+    langName: 'မြန်မာ'
+  },
+  en: {
+    findId: 'Find ID',
+    insights: 'Insights',
+    searchPlaceholder: 'Search by name or city...',
+    idSearch: 'ID SEARCH',
+    recordsFound: 'Records found',
+    supabaseLinked: 'Supabase Linked',
+    noResults: 'No results found',
+    adjustSearch: 'Try adjusting your search terms.',
+    totalParticipants: 'Total Participants',
+    distByCity: 'Distribution by City',
+    filterCity: 'Filter city...',
+    clearFilter: 'Clear Filter ×',
+    membersIn: 'Members in',
+    latestMembers: 'Latest Community Members',
+    liveFeed: 'Live Feed',
+    noMembers: 'No members found in this location',
+    leaderPatron: 'Leader & Patron',
+    patronName: 'Patron of Visuddhimag Dhamma Lann Vipassana Organizations, Mahasaddhamajawtikadaja Dr. Soe Lwin (Mandalay)',
+    visitWebsite: 'Visit Biography Website',
+    stayUpdated: 'Stay Updated • Community Channels',
+    viberGroup: 'Viber Group',
+    telegramChannel: 'Telegram Channel',
+    facebookPage: 'Facebook Page',
+    youtubeChannel: 'YouTube Channel',
+    joinAnnouncements: 'Join for Announcements',
+    instantUpdates: 'Instant Updates & News',
+    followUpdates: 'Follow for Updates',
+    watchVideos: 'Watch Dhamma Videos',
+    studentId: 'Student ID',
+    fullName: 'Full Name',
+    city: 'City',
+    details: 'Whole Info',
+    copyShare: 'Copy & Share Information',
+    copied: 'Copied Details!',
+    syncing: 'Syncing Live Database...',
+    communityFooter: 'Dhamma Lane Community • Web Analytics Platform',
+    viewMembers: 'View Members',
+    close: 'Close',
+    latestMembersTitle: 'Latest Members',
+    langName: 'English'
+  }
+};
