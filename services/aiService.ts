@@ -2,9 +2,24 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Student } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+let aiInstance: GoogleGenAI | null = null;
+
+const getAI = () => {
+  if (!aiInstance) {
+    const key = process.env.API_KEY || process.env.GEMINI_API_KEY;
+    if (!key) {
+      console.warn("GEMINI_API_KEY is missing. AI features will be disabled.");
+      return null;
+    }
+    aiInstance = new GoogleGenAI({ apiKey: key });
+  }
+  return aiInstance;
+};
 
 export const findStudentsWithAI = async (query: string, students: Student[]): Promise<string[]> => {
+  const ai = getAI();
+  if (!ai) return [];
+
   // We send a subset of data to avoid token limits, though 400 records is fine for Gemini 3
   const studentContext = students.map(s => ({
     id: s.id,

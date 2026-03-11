@@ -4,7 +4,15 @@ import { Student } from '../types';
 import { GoogleGenAI } from "@google/genai";
 import { supabase } from '../services/supabaseClient';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+let aiInstance: GoogleGenAI | null = null;
+const getAI = () => {
+  if (!aiInstance) {
+    const key = process.env.API_KEY || process.env.GEMINI_API_KEY;
+    if (!key) return null;
+    aiInstance = new GoogleGenAI({ apiKey: key });
+  }
+  return aiInstance;
+};
 
 interface RegistrationFormProps {
   onComplete: (student: Student) => void;
@@ -23,6 +31,9 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onComplete, onCance
 
   const cleanNameWithAI = async (inputName: string) => {
     if (inputName.length < 3) return;
+    const ai = getAI();
+    if (!ai) return;
+    
     setIsAiProcessing(true);
     try {
       const response = await ai.models.generateContent({
